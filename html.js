@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 const fs = require('fs');
 const path = require('path');
 const matchAll = require("match-all");
@@ -137,7 +139,7 @@ function buildTemplate(fileName, distDir)
 let configFile = process.argv[2];
 if(configFile){
     let configDir = path.dirname(__dirname + '/../../' + configFile);
-    let configContent = fs.readFileSync(__dirname + '/' + configFile);
+    let configContent = fs.readFileSync(__dirname + '/../../' + configFile);
     let configObj = JSON.parse(configContent);
     for(let src in configObj.files){
         let dest = configObj.files[src];

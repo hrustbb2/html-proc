@@ -4,7 +4,8 @@
   "description": "HTML processor",
   "main": "html.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "example": "html htmlconf.json"
   },
   "repository": {
     "type": "git",
