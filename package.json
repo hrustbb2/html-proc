@@ -1,0 +1,26 @@
+{
+  "name": "html_proc",
+  "version": "1.0.0",
+  "description": "HTML processor",
+  "main": "html.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hrustbb2/html-proc.git"
+  },
+  "author": "hrustbb2",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hrustbb2/html-proc/issues"
+  },
+  "homepage": "https://github.com/hrustbb2/html-proc#readme",
+  "dependencies": {
+    "match-all": "^1.2.6",
+    "pretty": "^2.0.0"
+  },
+  "bin": {
+    "html": "./html.js"
+  }
+}
