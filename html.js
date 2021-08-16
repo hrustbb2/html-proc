@@ -4,7 +4,6 @@ const fs = require('fs');
 const path = require('path');
 const matchAll = require("match-all");
 const pretty = require('pretty');
-const shell = require('shelljs');
 
 let pushContents = {};
 
@@ -144,7 +143,7 @@ if(configFile){
     let configObj = JSON.parse(configContent);
     for(let src in configObj.files){
         let dest = configObj.files[src];
-        shell.mkdir('-p', configDir + '/' + dest);
+        fs.mkdirSync(configDir + '/' + dest, { recursive: true });
         buildTemplate(configDir + '/' + src, configDir + '/' + dest);
     }
 }

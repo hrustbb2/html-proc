@@ -1,6 +1,6 @@
 {
   "name": "html_proc",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "HTML processor",
   "main": "html.js",
   "scripts": {
